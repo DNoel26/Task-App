@@ -1,0 +1,29 @@
+<div class="form-container">
+
+    <div>
+        <h1>Add Task</h1>    
+    </div>
+    <form action="/task/dashboard" method="POST">
+
+        <div class="form-control">     
+
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title">  
+            <div class="error">{{errors.title}}</div> 
+
+        </div>
+
+        <div class="form-control">  
+                
+            <label for="description">Description</label>
+            <textarea id="description" name="description" cols="30" rows="10"></textarea>
+            <div class="error">{{errors.first_name}}</div> 
+        </div> 
+
+        <div class="form-control">
+            <input type="submit" value="Add Task" class="btn">         
+        </div>
+
+    </form>
+
+</div>

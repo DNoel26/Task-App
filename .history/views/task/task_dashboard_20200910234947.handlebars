@@ -1,0 +1,34 @@
+
+<div class="top-area">
+    <div>
+        {{> welcome}}
+    </div>
+    <div>
+        <h2>My Tasks</h2>    
+        <form action="/task/add" method="GET">
+            <input type="submit" value="Add Task" id="addButton" class="btn">
+        </form>    
+    </div>
+</div>
+<div id="task-list-bottom-area">
+    <div class="task-items">
+        <h3>Item 1</h3>
+        <div class="buttons-container">
+            <a href="/task/edit" class="btn">Edit</a>
+            <a href="#" class="btn">Remove</a>
+        </div>
+    </div>
+    {{#each displayed_tasks_arr}}
+        <div class="task-items">
+            <h3>Title: {{this.title}}</h3>
+            <h3>User ID: {{this.user_id}}</h3>
+            <h3>{{this.date_created}}</h3>
+            <h3>{{this.last_modified}}</h3>
+            <div class="buttons-container">
+                <a href="/task/edit" class="btn">Edit</a>
+                <a href="#" class="btn">Remove</a>
+            </div>
+        </div>
+    {{/each}}
+    
+</div>

@@ -1,0 +1,39 @@
+<h2>This is my server side home page</h2>
+<div>
+    {{person.first_name}} {{person.last_name}}
+</div>
+<div>
+    {{age}}
+</div>
+<div>
+    {{movies}}
+</div>
+
+<div class="form-container">
+
+    <div>
+        <h1>Login</h1>    
+    </div>
+    <form action="/authenticate/login" method="POST">
+
+        <div class="form-control">    
+            <label for="username">Username/Email</label>
+            <input type="text" id="username_email" name="username">
+            <div class="error">{{errors.username}}</div> 
+
+        </div> 
+
+        <div class="form-control">    
+            <label for="username">Password</label>
+            <input type="password" id="password" name="password">
+            <div class="error">{{errors.password}}</div> 
+
+        </div> 
+                    
+        <div class="form-control">
+            <input type="submit" value="Login" class="btn">         
+        </div>
+
+    </form>
+
+</div>

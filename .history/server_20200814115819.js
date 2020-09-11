@@ -1,0 +1,50 @@
+
+const express = require("express");
+const exphbs  = require('express-handlebars');
+const body_parser = require("body-parser");
+const app = express();
+
+app.use(express.static('public'));
+
+require("dotenv").config({path:"config/keys.env"});
+
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
+
+app.use((req,res,next)=>{
+
+    console.log("Middleware test loaded");
+    next();
+});
+
+/*app.get("/",(req,res)=>{
+
+    console.log("Home Page loaded");
+    res.send("Welcome to the Home Page!");
+});*/
+
+app.get("/",(req,res)=>{
+
+    const person = {
+
+        first_name : "Darnell",
+        last_name : "Noel"
+    };
+
+    const age = 30;
+    const movies = ["The Matrix","Titanic","Speed"];
+
+    res.render("general/home",{
+
+        person,
+        age,
+        movies,
+        title : "Home Page"
+    })
+});
+
+//const PORT = 3000;
+app.listen(process.env.PORT,()=>{
+
+    console.log("Web Server is up and running!!!");
+});

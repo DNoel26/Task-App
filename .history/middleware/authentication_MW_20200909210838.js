@@ -1,0 +1,2 @@
+
+const is_authorized

@@ -1,0 +1,296 @@
+/*
+    CSS RESET
+*/
+:root /*NOT A SELECTOR*/
+{
+    --main-bg-color:#ededed;
+    --link-main-color:#000;
+    --main-btn-color : #252424;
+
+}
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*GENERAL Styles */
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: red;
+}
+
+
+.container 
+{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding:0 32px;
+
+}
+
+/* Header styles  */
+header
+{
+    background-color:var(--main-bg-color);
+    margin-bottom: 16px;
+}
+
+header nav 
+{
+    display:grid;
+    grid-template-columns: 200px 1fr;
+}
+
+header nav > ul > li
+{
+    display: inline-block;
+    list-style-type: none;
+    padding:20px 16px
+
+}
+
+header h1
+{
+    font-size:1rem;
+   
+}
+
+header nav   a
+{
+    text-decoration: none;
+    color:var(--link-main-color);
+    align-self: center;
+    font-weight: 500;
+ 
+}
+
+/******************* HAMBUGER MENU*****************/
+.hide
+{
+    display:none;
+}
+
+.bars
+{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+
+.main-area
+{
+    background-color: var(--main-bg-color);
+    border-radius: 5px;
+    padding-top:16px;
+    padding-bottom: 16px;
+}
+
+
+
+
+
+/*Task Area styles*/
+
+
+.top-area
+{
+    margin-bottom: 16px;
+}
+
+.top-area > h2
+{
+    font-size:1rem;
+   
+         
+}
+
+.top-area > form , .top-area > h2    
+{
+    display:inline-block;
+}
+
+
+.top-area > form > input[type="button"]
+{
+    background-color:var(--main-btn-color);
+    
+}
+.top-area > form > input[type="text"]
+{
+    display:inline-block;
+    padding:5px 0px;
+}
+
+
+.task-items
+{
+    background-color: #fff;
+    margin-bottom: 16px;
+    padding:16px;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+
+.task-items .buttons-container
+{
+    justify-self: end;
+
+
+
+}
+
+.buttons-container > a  
+{
+    background-color:#da5350;
+    width:75px
+}
+
+/************USER LIST ******************/
+
+/*Task Area styles*/
+
+#user-list-bottom-area
+{
+    overflow-x:auto;
+}
+
+#user-list-bottom-area table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th
+  {
+      background-color: white;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: white;
+  }
+
+ .btn
+  {
+    border-radius: 5px;
+    text-decoration: none;
+    color:#fff;
+    display:inline-block;
+    padding:5px;
+    text-align:center;
+
+  }
+
+  .user-add-btn
+  {
+      width:100px;
+  }
+
+  .deactivate-btn
+  {
+          background-color:#da5350;
+
+  }
+
+  /*FORM*/
+  .form-container
+{
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+form-control 
+{
+    margin-bottom:20px; 
+}
+
+
+.form-control label
+{
+    display:block;
+    margin:20px 0;
+    color: #000;
+}
+
+.form-control input[type="text"],
+.form-control input[type="password"],
+.form-control input[type="email"],
+.form-control select,
+.form-control textarea
+{
+    display: block;
+    width:100%;
+    border: 2px solid #818080;
+    font-size:0.9rem;
+    padding:8px ;
+}   
+
+.form-control input[type="submit"],
+.top-area input[type="submit"]
+{
+    background-color: #252424;
+    color:#fff;
+    font-size:1rem;
+    width:100%;
+    display: block;
+    padding:8px 5px;
+    margin-top: 16px;
+    border:2px solid #252424;
+    border-radius: 5px;
+}
+
+.form-control span
+{
+    color:#f00;
+    font-size: 0.8rem;
+   display: none ;
+}
+
+.error > span
+{
+    display:block;
+}
+
+.profile-container
+{
+    max-width: 800px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.profile-container a 
+{
+    color:black;
+    font-size:1.3rem;
+}
+
+.profile-card
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+}
+
+.profile-card > img
+{
+    width:150px;
+    height:150px;
+    object-fit: cover;
+}

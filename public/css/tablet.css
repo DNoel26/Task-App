@@ -1,0 +1,39 @@
+
+
+.hambuger-menu
+{
+    display: block;
+    justify-self: end;
+}
+
+.show
+{
+    display:block;
+}
+
+#main-menu-links
+{
+    display: none;
+    grid-row: 2;
+    grid-column: 1/span 2;
+
+}
+
+#main-menu-links > li 
+{
+    display:block;
+    text-align: center;
+    padding:10px 0;
+}
+
+.task-items .buttons-container
+{
+    justify-self: start;
+   
+}
+
+.profile-container
+{
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+}

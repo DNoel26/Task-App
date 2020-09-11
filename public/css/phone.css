@@ -1,0 +1,52 @@
+/*BREAK POITS */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+
+header
+{
+    padding:8px 0; 
+}
+
+header h1 
+{
+    font-size:0.8rem;
+}
+
+#task-list-top-area > h2  
+{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#task-list-top-area > form , #task-list-top-area > h2    
+{
+    display:block;
+}
+
+#task-list-top-area > form > input[type="text"]
+{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.task-items
+{
+    grid-template-columns: 1fr; 
+}
+
+
+.task-items > h3
+{
+    font-size:1rem;
+}
+
+
+.task-items > .buttons-container
+
+{
+    margin-top:10px;
+    font-size:0.8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}

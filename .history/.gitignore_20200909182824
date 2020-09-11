@@ -1,0 +1,4 @@
+node_modules/
+config/keys.env
+config/
+MySQL/

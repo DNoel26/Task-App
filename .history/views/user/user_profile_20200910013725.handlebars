@@ -1,0 +1,25 @@
+<div class="profile-container">
+
+    <div class="welcome-container">
+        <h2>Welcome {{session_user.first_name}} {{session_user.last_name}}</h2>
+        <img src="/public/img/uploads/" alt="">
+    </div>
+
+    <div class="profile-card">
+
+        <img src="../img/upload.png" alt="">
+        <a href="/user/upload-photo">Upload Photo</a>
+
+    </div>
+    <div class="profile-card">
+
+        <img src="../img/password.png" alt="">
+        <a href="/user/change-password">Change Password</a>
+    </div>
+    <div class="profile-card">
+
+        <img src="../img/tasks.png" alt="">
+        <a href="/task/dashboard">Tasks</a>
+    </div>        
+
+</div>
